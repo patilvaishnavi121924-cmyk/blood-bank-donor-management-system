@@ -1,0 +1,165 @@
+/* =========================================================
+   BLOODLIFE RESPONSIVE CSS
+========================================================= */
+
+
+/* TABLET */
+
+@media(max-width:991px){
+
+    .navbar{
+        padding:12px 0 !important;
+    }
+
+    .navbar-brand{
+        font-size:24px !important;
+    }
+
+    .navbar-nav{
+        padding-top:12px;
+        align-items:flex-start;
+    }
+
+    .nav-link{
+        margin-left:0;
+        padding:9px 0 !important;
+    }
+
+    .nav-link::after{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+        text-align:center;
+        padding-top:80px;
+        padding-bottom:60px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-image{
+        margin-top:40px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .register-section,
+    .register-page,
+    .login-page{
+        padding-top:80px;
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:767px){
+
+    .navbar-brand{
+        font-size:22px !important;
+    }
+
+    .hero{
+        padding-top:65px;
+        padding-bottom:50px;
+    }
+
+    .hero h1{
+        font-size:36px;
+        letter-spacing:0;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-tag{
+        font-size:14px;
+        padding:8px 16px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .stat-card,
+    .blood-card,
+    .feature-card,
+    .service-card,
+    .step-card,
+    .testimonial-card{
+        margin-bottom:18px;
+    }
+
+    .stat-card h2{
+        font-size:32px;
+    }
+
+    .blood-card h3{
+        font-size:34px;
+    }
+
+    .register-box,
+    .login-box{
+        padding:25px 20px;
+    }
+
+    .register-page,
+    .login-page{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .register-section{
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+    .navbar-brand{
+        font-size:20px !important;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+    .btn-main,
+    .btn-outline-main{
+        padding:9px 19px !important;
+    }
+
+    .register-box,
+    .login-box{
+        padding:20px 15px;
+    }
+
+    .form-control,
+    .form-select{
+        min-height:47px;
+    }
+
+}

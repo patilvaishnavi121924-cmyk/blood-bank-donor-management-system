@@ -1,0 +1,408 @@
+/* =========================================================
+   BLOODLIFE ADMIN / DASHBOARD CSS
+========================================================= */
+
+:root{
+    --primary:#A61E2D;
+    --primary-dark:#861624;
+    --button:#D62828;
+    --secondary:#274C77;
+    --background:#F5F7FA;
+    --white:#fff;
+    --text:#293241;
+    --muted:#687386;
+    --accent:#FDECEC;
+    --border:#E2E6EC;
+
+    --shadow-sm:0 5px 18px rgba(41,50,65,.07);
+    --shadow-md:0 12px 30px rgba(41,50,65,.11);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body{
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:"Poppins",Arial,sans-serif;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:linear-gradient(180deg,#A61E2D 0%,#861624 100%);
+    padding-top:22px;
+    box-shadow:5px 0 25px rgba(0,0,0,.13);
+    z-index:1050;
+    overflow-y:auto;
+}
+
+
+/* LOGO */
+
+.logo{
+    text-align:center;
+    color:#fff;
+    margin-bottom:30px;
+    padding:0 15px;
+    font-size:25px;
+    font-weight:700;
+    letter-spacing:.8px;
+}
+
+
+/* SIDEBAR LIST */
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar ul li{
+    margin:4px 12px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:13px 17px;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s ease;
+    border-radius:10px;
+    font-weight:500;
+}
+
+.sidebar ul li a:hover{
+    background:rgba(255,255,255,.13);
+    color:#fff;
+    transform:translateX(4px);
+}
+
+.sidebar ul li a i{
+    width:22px;
+    text-align:center;
+    font-size:16px;
+}
+
+.sidebar ul li a.active{
+    background:var(--button);
+    color:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main-content{
+    margin-left:260px;
+    min-height:100vh;
+    padding-bottom:40px;
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.topbar{
+    background:#fff;
+    padding:16px 24px;
+    min-height:68px;
+    box-shadow:0 3px 16px rgba(0,0,0,.07);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:900;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.main-content .card{
+    border:none !important;
+    border-radius:16px !important;
+    box-shadow:var(--shadow-sm);
+    transition:.3s ease;
+    overflow:hidden;
+}
+
+.main-content .card:hover{
+    box-shadow:var(--shadow-md);
+}
+
+.main-content .card-header{
+    border:none;
+    padding:16px 20px;
+    font-weight:600;
+}
+
+.main-content .card-body{
+    padding:22px;
+}
+
+
+/* =========================================================
+   DASHBOARD STATISTICS
+========================================================= */
+
+.main-content .card h2{
+    color:var(--secondary);
+    font-size:32px;
+    font-weight:700;
+}
+
+.main-content .card h5{
+    color:var(--text);
+    font-weight:600;
+}
+
+.main-content .card i{
+    transition:.3s ease;
+}
+
+.main-content .card:hover i{
+    transform:scale(1.08);
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5{
+    color:var(--text);
+    font-weight:700;
+}
+
+.main-content .text-danger{
+    color:var(--primary) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.main-content .btn{
+    border-radius:9px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.main-content .btn:hover{
+    transform:translateY(-2px);
+}
+
+.main-content .btn-danger{
+    background:var(--primary);
+    border-color:var(--primary);
+}
+
+.main-content .btn-danger:hover{
+    background:var(--primary-dark);
+    border-color:var(--primary-dark);
+}
+
+.main-content .btn-primary{
+    background:var(--secondary);
+    border-color:var(--secondary);
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.main-content label{
+    color:var(--text);
+    font-weight:600;
+    margin-bottom:7px;
+}
+
+.main-content .form-control,
+.main-content .form-select{
+    min-height:46px;
+    border:1px solid #D7DCE4;
+    border-radius:9px;
+    transition:.3s ease;
+}
+
+.main-content textarea.form-control{
+    min-height:100px;
+}
+
+.main-content .form-control:focus,
+.main-content .form-select:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(166,30,45,.10);
+}
+
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.main-content .table{
+    margin-bottom:0;
+    vertical-align:middle;
+}
+
+.main-content .table thead th{
+    background:var(--primary) !important;
+    color:#fff !important;
+    border-color:var(--primary) !important;
+    padding:13px;
+    font-weight:600;
+}
+
+.main-content .table tbody td{
+    padding:13px;
+}
+
+.main-content .table tbody tr{
+    transition:.2s ease;
+}
+
+.main-content .table tbody tr:hover{
+    background:var(--accent);
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.main-content .badge{
+    padding:7px 11px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.main-content .alert{
+    border:0;
+    border-radius:12px;
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+.dropdown-menu{
+    border:0;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,.13);
+}
+
+.dropdown-item{
+    border-radius:8px;
+    padding:9px 15px;
+}
+
+.dropdown-item:hover{
+    background:var(--accent);
+    color:var(--primary);
+}
+
+
+/* =========================================================
+   SIDEBAR SCROLLBAR
+========================================================= */
+
+.sidebar::-webkit-scrollbar{
+    width:5px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background:rgba(255,255,255,.06);
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.35);
+    border-radius:10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:991px){
+
+    .sidebar{
+        width:240px;
+    }
+
+    .main-content{
+        margin-left:240px;
+    }
+
+}
+
+
+@media(max-width:767px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .main-content{
+        margin-left:220px;
+    }
+
+    .topbar{
+        padding:14px 16px;
+    }
+
+    .main-content .card-body{
+        padding:17px;
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .sidebar{
+        width:210px;
+    }
+
+    .main-content{
+        margin-left:210px;
+    }
+
+    .main-content .card h2{
+        font-size:27px;
+    }
+
+}
+
